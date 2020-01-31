@@ -2,26 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script>
-        function validar(){
-            var email = document.getElementById("email").value;
-            var pwd = document.getElementById("micontrasenya").value;
-            if (email=="x@gmail.com" && pwd=="patata"){
-                window.location.href="cv.html";
-            } else{
-                alert("IMPOSTOR");
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script type="text/javascript" src="js/juego.js"></script>
+    <title>SuperCICEKarts</title>
 </head>
-<body>
-    <form action="" method="">
-        <input type="email" name="" id="email">
-        <input type="password" name "" id="micontrasenya">
-        <input type="button" value="Validar" onclick="validar()">
-    </form>
+<body onload="inicializar()" onkeypress="capturarPulsacion(event)">
+    <div>
+        <img id="logo" src="imagenes/logo.png">
+    </div>
+    <div>
+        <img id="player1" class="player" src="imagenes/f1_1.png" onnmouseenter="zoom(1)" onmouseload="antizoom(1)">
+    </div>
+    <div>
+        <img id="player2" class="player" src="imagenes/f1_2.png" onnmouseenter="zoom(2)" onmouseload="antizoom(2)">
+    </div>
+    
 </body>
 </html>

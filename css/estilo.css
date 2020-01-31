@@ -1,0 +1,8 @@
+.player{
+-webkit-transition: all 180ms linear;
+-moz-transition: all 180ms linear;
+-ms-transition: all 180ms linear;
+-o-transition: all 180ms linear;
+transition: all 180ms linear;
+width: 250px;
+}
