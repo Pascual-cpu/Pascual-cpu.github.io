@@ -6,3 +6,12 @@
 transition: all 180ms linear;
 width: 250px;
 }
+
+#meta{
+    position: absolute;
+    top: 200px;
+    left: 1200px;
+    width: 20px;
+    height: 200px;
+    background-color: black;
+}

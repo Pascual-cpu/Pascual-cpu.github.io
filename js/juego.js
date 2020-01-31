@@ -7,7 +7,7 @@ var posPlayer1 = 0;
 var posPlayer2 = 0;
 var jugando = true;
 const SPEED = 10;
-const DISTANCIA = 1000;
+const DISTANCIA = 1200;
 
 function inicializar(){
 	var logo = document.getElementById("logo");
@@ -33,7 +33,9 @@ function capturarPulsacion(tecla){
 		posPlayer1=posPlayer1+SPEED;
 		document.getElementById("player1").style.paddingLeft=posPlayer1+"px";
 		if (posPlayer1 >= DISTANCIA){
-			alert("Ha ganado el jugador 1");
+//			alert("Ha ganado el jugador 1");
+			document.getElementById("campeon").innerHTML="HA GANADO EN JUGADOR 1";
+			document.getElementById("ap").play();
 			jugando==false;
 		}
 	}
@@ -43,7 +45,9 @@ function capturarPulsacion(tecla){
 		posPlayer2=posPlayer2+SPEED;
 		document.getElementById("player2").style.paddingLeft=posPlayer2+"px";
 		if (posPlayer2 >= DISTANCIA){
-			alert("Ha ganado el jugador 2");
+//			alert("Ha ganado el jugador 2");
+			document.getElementById("otrocampeon").innerHTML="HA GANADO EN JUGADOR 2";
+			document.getElementById("ap").play();
 			jugando==false;
 		}
 	}
